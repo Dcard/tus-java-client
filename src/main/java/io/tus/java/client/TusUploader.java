@@ -25,7 +25,7 @@ public class TusUploader {
     private long offset;
     private TusClient client;
     private byte[] buffer;
-    private int requestPayloadSize = 10 * 1024 * 1024;
+    private int requestPayloadSize = 100 * 1024 * 1024;
     private int bytesRemainingForRequest;
 
     private HttpURLConnection connection;
@@ -49,7 +49,7 @@ public class TusUploader {
 
         input.seekTo(offset);
 
-        setChunkSize(2 * 1024 * 1024);
+        setChunkSize(100 * 1024 * 1024);
     }
 
     private void openConnection() throws IOException, ProtocolException {
