@@ -1,4 +1,5 @@
-# tus-java-client [![Build Status](https://travis-ci.org/tus/tus-java-client.svg?branch=master)](https://travis-ci.org/tus/tus-java-client)
+# tus-java-client [![Build Status](https://travis-ci.org/tus/tus-java-client.svg?branch=master)](https://travis-ci.org/tus/tus-java-client)[![](https://jitpack.io/v/Dcard/tus-java-client.svg)](https://jitpack.io/#Dcard/tus-java-client)
+
 
 > **tus** is a protocol based on HTTP for *resumable file uploads*. Resumable
 > means that an upload can be interrupted at any moment and can be resumed without
@@ -83,9 +84,11 @@ The JARs can be downloaded manually from our [Bintray project](https://bintray.c
 **Gradle:**
 
 ```groovy
-compile 'io.tus.java.client:tus-java-client:0.4.1'
+implementation 'io.tus.java.client:tus-java-client:0.4.1'
 ```
-
+```groovy
+implementation 'com.github.Dcard:tus-java-client:0.4.1-d1'
+```
 **Maven:**
 
 ```xml
